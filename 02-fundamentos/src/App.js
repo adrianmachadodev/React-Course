@@ -1,7 +1,7 @@
-import Contador from "./components/contador"
+import Card from "./components/card"
 
 const App = () => {
-  return <Contador inicial = {5} factor ={3}/>
+  return <Card/>
 }
 
 export default App;
