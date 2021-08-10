@@ -1,6 +1,7 @@
 {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "prettier.useEditorConfig": false
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.formatOnType": true,
+	"prettier.useEditorConfig": false,
+	"git.ignoreLimitWarning": true
 }
