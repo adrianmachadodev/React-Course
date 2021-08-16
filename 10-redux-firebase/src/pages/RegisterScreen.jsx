@@ -51,7 +51,7 @@ const RegisterScreen = () => {
 			<h3>Login</h3>
 			<hr />
 
-			<div className="row container">
+			<div className="row container animate__animated animate__zoomIn">
 				<form onSubmit={handleRegister} className="col s12">
 					<div className="row">
 						<div className="input-field col s12">

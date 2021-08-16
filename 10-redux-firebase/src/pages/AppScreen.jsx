@@ -32,7 +32,10 @@ const AppScreen = () => {
 					<tbody>
 						{data.map((elemento) => {
 							return (
-								<tr key={elemento.id}>
+								<tr
+									className="animate__animated animate__fadeInUp"
+									key={elemento.id}
+								>
 									<Element data={elemento} />
 								</tr>
 							);

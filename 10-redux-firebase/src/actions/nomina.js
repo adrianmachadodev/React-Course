@@ -38,18 +38,26 @@ export const crear = (data) => {
 	};
 };
 
-export const borrarRegistro = (ddd) => {
-	return (dispatch, getState) => {
+export const borrarRegistro = (id) => {
+	return async (dispatch, getState) => {
 		const { uid } = getState().auth;
 
-		const referencia = await db.collection(`${uid}/nominas/nomina`).add(datos);
+		await db.doc(`${uid}/nominas/nomina/${id}`).delete();
+
+		dispatch(borrar(id));
 	};
 };
-db.collection(``);
+//db.collection(``);
 
 export const borrar = (id) => {
 	return {
 		type: types.nominaDelete,
 		payload: id,
+	};
+};
+
+export const limpiar = () => {
+	return {
+		type: types.nominaClean,
 	};
 };

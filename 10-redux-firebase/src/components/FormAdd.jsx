@@ -32,6 +32,11 @@ const FormAdd = () => {
 		const cantidadFinal = horas * precioHora;
 
 		dispatch(crearRegistro(cantidadFinal));
+
+		setCantidadPago({
+			precioHora: 0,
+			horas: 0,
+		});
 	};
 
 	return (
